@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Sharelock"
+client_id = "17d4cb5eec7ab069f8a96c270cbe4a62"
+application_url = "https://coordinator-targeted-pentium-waterproof.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://coordinator-targeted-pentium-waterproof.trycloudflare.com/auth/callback",
+  "https://coordinator-targeted-pentium-waterproof.trycloudflare.com/auth/shopify/callback",
+  "https://coordinator-targeted-pentium-waterproof.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "cbd-11.myshopify.com"

@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "sharelock"
+client_id = "cdfe39c2f770d0700707c8529fa0f9d4"
+application_url = "https://surgical-bosnia-armenia-london.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://surgical-bosnia-armenia-london.trycloudflare.com/auth/callback",
+  "https://surgical-bosnia-armenia-london.trycloudflare.com/auth/shopify/callback",
+  "https://surgical-bosnia-armenia-london.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "go-winchat.myshopify.com"
